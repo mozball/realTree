@@ -3,6 +3,17 @@
   black: "#353535",
   green: "#6B8F71",
   blue: "#7798AB",*/
+  * {
+    box-sizing: border-box;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+
 body {
   padding: 0;
   margin: 0;
@@ -14,8 +25,9 @@ body {
   width: 100%;
   position: top;
   padding: 10px 0;
-  background-color: #353535;
+  background-color: #f8f8f8;
   grid-template-rows: 1fr, 3fr, 3fr, 3fr, 3fr;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .navbar ul {
@@ -25,7 +37,7 @@ body {
   overflow: hidden;
   font-family: helvetica, san-serif;
   align: left;
-  font-weight: bold;
+  font-weight: 200;
 }
 
 .about {
@@ -42,7 +54,7 @@ body {
 
 .navbar img {
   width: 30px;
-  height: 30px;
+  height: auto;
   float: left;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -57,29 +69,32 @@ body {
   display: block;
   padding: 20px;
   text-decoration: none;
-  color: white;
+  color: #7798AB;
 }
 
-.active {
-  background-color: #7798AB;
-  color: white;
-}
-li:hover {
+.navbar a:hover {
   background-color: #6B8F71;
 }
 
 /* Main */
-
 .main {
   display: grid;
   margin: 0;
-  padding: 0;
-
+  padding: 20px;
 }
 
 h1 {
   font-family: "century gothic";
   -webkit-text-stroke: 1px black;
-    text-stroke: 1px black;
-    -webkit-text-fill-color: transparent;
+  text-stroke: 1px black;
+  -webkit-text-fill-color: white;
+
+}
+
+p {
+  font-family: Helvetica, san-serif;
+  font-weight: 200;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 5px 20px;
 }
