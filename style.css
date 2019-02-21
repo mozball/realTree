@@ -20,12 +20,10 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  display: grid;
   width: 100%;
   position: top;
-  padding: 10px 0;
+  padding: 0;
   background-color: #f8f8f8;
-  grid-template-rows: 1fr, 3fr, 3fr, 3fr, 3fr;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: fixed;
 }
@@ -40,13 +38,9 @@ body {
   font-weight: 200;
 }
 
-.about {
-  grid-column: 2 / 3;
-}
+.about {}
 
-.download {
-  grid-column: 3 / 4;
-}
+.download {}
 
 .faq {}
 
@@ -70,10 +64,15 @@ body {
   padding: 20px;
   text-decoration: none;
   color: #7798AB;
+  font-size: .8em;
+  font-family: "century gothic";
 }
 
 .navbar a:hover {
   background-color: #6B8F71;
+  height: auto;
+  font-weight: bold;
+  color: white;
 }
 
 /* Main */
@@ -86,17 +85,21 @@ body {
   padding-top: 10%;
 }
 
+big {
+  font-size: 3em;
+}
 h1 {
   font-family: "century gothic";
-  -webkit-text-stroke: 1px black;
-  text-stroke: 1px black;
+  -webkit-text-stroke: 1px #353535;
+  text-stroke: 1px #353535;
   -webkit-text-fill-color: white;
+  font-size: 2.5em;
 }
 
 h2 {
   font-family: "century gothic";
-  -webkit-text-stroke: 1px black;
-  text-stroke: 1px black;
+  font-color: #353535;
+  font-weight: bold;
   font-size: 1.5em;
 }
 
@@ -104,8 +107,34 @@ p {
   font-family: Helvetica, san-serif;
   font-weight: 200;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 2;
   padding: 5px 20px;
 }
 
 /* BOXES */
+
+.box {
+align-content: center;
+text-align: center;
+}
+
+#a {
+height: 100vh;
+background-color: 0;
+border-width: thin
+}
+
+#b {
+  height: 100vh;
+
+}
+
+#c {
+  height: 100vh;
+
+}
+
+#d {
+  height: 100vh;
+
+}
