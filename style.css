@@ -80,9 +80,6 @@ body {
 .main {
   display: grid;
   margin: 0;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 10%;
 }
 
 big {
@@ -109,6 +106,7 @@ p {
   font-size: 1em;
   line-height: 2;
   padding: 5px 20px;
+  width: minmax(50%, 75%);
 }
 
 /* BOXES */
@@ -136,5 +134,4 @@ border-width: thin
 
 #d {
   height: 100vh;
-
 }
