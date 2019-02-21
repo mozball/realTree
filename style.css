@@ -104,7 +104,7 @@ p {
   font-family: Helvetica, san-serif;
   font-weight: 200;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 2;
   padding: 5px 20px;
   width: minmax(50%, 75%);
 }
@@ -112,25 +112,26 @@ p {
 /* BOXES */
 
 .box {
-height: 100vh;
 align-content: center;
 text-align: center;
-padding-top: 10%;
 }
 
-.a {
-background-color: blue;
+#a {
+height: 100vh;
+background-color: 0;
+border-width: thin
 }
 
-.b {
-  background-color: red;
-
-}
-
-.box 3 {
+#b {
+  height: 100vh;
 
 }
 
-.box 4 {
+#c {
+  height: 100vh;
 
+}
+
+#d {
+  height: 100vh;
 }
