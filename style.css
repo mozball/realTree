@@ -76,62 +76,62 @@ body {
 }
 
 /* Main */
-
 .main {
   display: grid;
   margin: 0;
+  text-align: center;
 }
 
 big {
   font-size: 3em;
 }
+
 h1 {
-  font-family: "century gothic";
-  -webkit-text-stroke: 1px #353535;
-  text-stroke: 1px #353535;
+  font-family: "century gothic", helvetica, arial, sans-serif;
+  -webkit-text-stroke: 1.5px black;
+  text-stroke: 1.5px black;
   -webkit-text-fill-color: white;
+  text-fill-color: white;
+  line-height: 1em;
   font-size: 2.5em;
 }
 
 h2 {
-  font-family: "century gothic";
-  font-color: #353535;
+  font-family: "century gothic", helvetica, arial, sans-serif;
+  font-color: black;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2em;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
   font-family: Helvetica, san-serif;
   font-weight: 200;
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 2;
-  padding: 5px 20px;
-  width: minmax(50%, 75%);
+  padding: 5px 30%;
+  text-align: justify;
 }
 
 /* BOXES */
 
+
 .box {
-align-content: center;
-text-align: center;
+  padding: 20% 10% 20% 10%;
 }
 
-#a {
-height: 100vh;
-background-color: 0;
-border-width: thin
+.box p h1 h2{
+  align: center;
 }
 
-#b {
-  height: 100vh;
-
+.a {
+  background-color: #fff;
 }
 
-#c {
-  height: 100vh;
-
+.b {
+  background-color: #fff;
 }
 
-#d {
-  height: 100vh;
-}
+.c {}
+
+.d {}
