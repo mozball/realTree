@@ -14,6 +14,7 @@
 }
 
 body {
+  display: grid;
   padding: 0;
   margin: 0;
 }
@@ -50,8 +51,6 @@ body {
   width: 30px;
   height: auto;
   float: left;
-  grid-column-start: 1;
-  grid-column-end: 2;
   padding: 10px 0;
 }
 
@@ -61,33 +60,53 @@ body {
 
 .navbar a {
   display: block;
-  padding: 20px;
+  padding: 2vw;
   text-decoration: none;
   color: #7798AB;
   font-size: .8em;
-  font-family: "century gothic";
+  font-family: "century gothic", helvetica, arial, sans-serif;
 }
 
 .navbar a:hover {
   background-color: #6B8F71;
-  height: auto;
-  font-weight: bold;
   color: white;
 }
 
 /* Main */
 .main {
-  display: grid;
   margin: 0;
   text-align: center;
 }
 
-big {
-  font-size: 3em;
+button {
+  border-radius: 8px;
+  font-family: "century gothic", helvetica, arial, sans-serif;
+  font-size: .8vw;
+  background-color: #6B8F71;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
 }
+
+button:hover {
+  background-color: #F2F2F2;
+  color: #6B8F71;
+}
+
+big {
+  font-size: 5vw;
+}
+
+small {
+  font-size: 1.2vw;
+}
+
 strong {
   font-weight: bold;
   text-align: right;
+  font-size: 1.2vw;
 }
 
 h1 {
@@ -97,47 +116,72 @@ h1 {
   -webkit-text-fill-color: white;
   text-fill-color: white;
   line-height: 1em;
-  font-size: 2.5em;
+  font-size: 2.3vw;
 }
 
 h2 {
   font-family: "century gothic", helvetica, arial, sans-serif;
   font-color: black;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5vw;
   -webkit-font-smoothing: antialiased;
 }
 
 p {
   font-family: Helvetica, san-serif;
   font-weight: 200;
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 2;
-  padding: 5px 30%;
-  text-align: justify;
+  padding: 5px 20%;
+}
+
+center {
+  text-align: center;
 }
 
 /* BOXES */
-
-
 .box {
   margin: 20%;
+  height: 100vh;
 }
 
-.box p h1 h2{
-  align: center;
-}
+/*@media screen and (max-width: 600px) {
+  p {
+    font-size: 3vw;
+  }
+  button {
+    font-size: 3vw;
+  }
+  h1 {
+    font-size: 6vw;
+  }
+  h2 {
+    font-size: 4.20vw;
+    pading-bottom: 10%;
+  }
+  strong {
+    font-weight: bold;
+    font-size: 3.2vw;
+  }
+  big {
+    font-size: 12vw;
+    padding: 10%;
+    padding-top: 40%;
+  }
+  .box {
+    margin: 2vw;
+    margin-top: 10vh;
+    height: 100vh;
+    margin-bottom: 10vh;
 
-.a {
-
-}
-
-.b {
-  float: right;
-}
-
-.c {
-    float: left;
-}
-
-.d {}
+  }
+  .navbar {
+    height: 5vh;
+  }
+  .navbar a {
+    font-size: 2vw;
+  }
+  #a {
+    height: 100vh;
+  }
+} */
