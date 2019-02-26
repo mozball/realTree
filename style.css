@@ -48,10 +48,10 @@ body {
 .privacy {}
 
 .navbar img {
-  width: 30px;
-  height: auto;
-  float: left;
-  padding: 10px 0;
+  width: 30%;
+  height: 30%;
+  padding: 10px;
+  float: right;
 }
 
 .navbar li {
