@@ -48,22 +48,23 @@ body {
 .privacy {}
 
 .navbar img {
-  width: 30%;
-  height: 30%;
+  width: 15%;
+  height: 15%;
   padding: 10px;
   float: right;
+  position: bottom;
 }
 
 .navbar li {
-  float: left;
 }
 
 .navbar a {
   display: block;
-  padding: 2vw;
+  padding: 1.2vw;
   text-decoration: none;
   color: #7798AB;
-  font-size: .8em;
+  font-size: 1em;
+  float: left;
   font-family: "century gothic", helvetica, arial, sans-serif;
 }
 
