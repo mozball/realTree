@@ -25,7 +25,8 @@ padding: 0;
   padding: 0;
   background-color: #f8f8f8;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  position: sticky;
+  position: fixed;
+  top: 0;
 }
 
 .navbar ul {
@@ -143,17 +144,19 @@ h1 {
   -webkit-text-fill-color: white;
   text-fill-color: white;
   line-height: 1em;
-  font-size: 2.3em;
-  text-align: center;
+  font-size: 2.5em;
+  text-align: left;
+  padding: 0 20%;
 }
 
 h2 {
   font-family: "century gothic", helvetica, arial, sans-serif;
   font-color: black;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.5em;
   -webkit-font-smoothing: antialiased;
-  text-align:center;
+  text-align:right;
+    padding: 0 20%;
 }
 
 p {
@@ -161,6 +164,6 @@ p {
   font-weight: 200;
   font-size: 1em;
   line-height: 2;
-  padding: 5px 40%;
-  text-align:center;
+  padding: 5% 20%;
+  text-align:justify;
 }
