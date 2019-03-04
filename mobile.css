@@ -101,7 +101,7 @@ p {
 
 button {
   margin-top: auto;
-  background: #FFD166;
+  background: #246A73;
   color: white;
   font-weight: lighter;
   font-size: 1rem;
@@ -113,7 +113,7 @@ button {
 }
 button:hover {
 background-color: #F2F2F2;
-color: #6B8F71;
+color: #246A73;
 }
 
 
@@ -123,7 +123,8 @@ color: #6B8F71;
 ul.navbar {
   list-style-type: none;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0;
+  border-bottom: solid 5px #246A73;
   width: 25%;
   background-color: #f1f1f1;
   position: fixed;
@@ -139,7 +140,7 @@ ul.navbar li a {
 }
 
 ul.navbar li a.active {
-  background-color: #4CAF50;
+  background-color: #246A73;
   color: white;
 }
 
@@ -159,11 +160,4 @@ ul.navbar li a:hover:not(.active) {
   }
 
   div.content {margin-left: 0;}
-}
-
-@media (max-width: 400px) {
-  ul.navbar li a {
-    text-align: center;
-    float: none;
-  }
 }
