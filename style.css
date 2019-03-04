@@ -14,8 +14,8 @@
 }
 
 body {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation Bar */
@@ -25,7 +25,8 @@ padding: 0;
   padding: 0;
   background-color: #f8f8f8;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  position: sticky;
+  position: fixed;
+  top: 0;
 }
 
 .navbar ul {
@@ -54,8 +55,7 @@ padding: 0;
   position: bottom;
 }
 
-.navbar li {
-}
+.navbar li {}
 
 .navbar a {
   display: block;
@@ -75,8 +75,8 @@ padding: 0;
 /* Main Grid Setup*/
 main {
   margin-top: 5%;
-
 }
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -89,7 +89,6 @@ main {
   align-items: center;
 }
 
-
 .box {
   grid-template: 1fr;
   align-self: center;
@@ -100,7 +99,6 @@ main {
 }
 
 /* Styling */
-
 button {
   border-radius: 8px;
   font-family: "century gothic", helvetica, arial, sans-serif;
@@ -114,7 +112,6 @@ button {
   margin-left: 45vw;
   margin-right: 45vw;
   width: 10vw;
-
 }
 
 button:hover {
@@ -153,7 +150,7 @@ h2 {
   font-weight: bold;
   font-size: 1.3em;
   -webkit-font-smoothing: antialiased;
-  text-align:center;
+  text-align: center;
 }
 
 p {
@@ -162,5 +159,35 @@ p {
   font-size: 1em;
   line-height: 2;
   padding: 5px 40%;
-  text-align:center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .box {
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
 }

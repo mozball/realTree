@@ -1,0 +1,169 @@
+/* white: "#F2F2F2",
+  gray: "#D8D8D8",
+  black: "#353535",
+  green: "#6B8F71",
+  blue: "#7798AB",*/
+
+* {
+  box-sizing: border-box;
+}
+/* border box makes the math for boxes and stuff a lot more inuitive and
+just generally easier. it adds things like padding and margins to the
+total "box height", instead of thinking of the box height as these elements
+combined. instead of the box being height+padding+border+margins=total height,
+the total height is the same as the height attribute.*/
+
+body {
+  padding: 0;
+  margin: 0;
+}
+/* rem means relative to the root element, as opposed to em being relative to
+the default font size of just that element. */
+
+/* FALL BACK LAYOUT */
+/* its good to do this incase someone's broswer doesn't have grid!
+kind of unlikely, but older versions of browsers as well as opera mini,
+QQ, and baidu don't have grid yet. (who uses these???!) */
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+article {
+  margin: 1rem 0;
+}
+
+/* GRID LAYOUT */
+/* saying "@supports" tells the broswer what to do if it supports this
+specific thing. in this case, it's like saying if you support grid, please
+use grid. which is like, yeah, please use grid, obviously... but it can be
+helpful, again, if a broswer DOESN'T support something (like grid)*/
+@supports (display: grid) {
+  main {
+    max-width: 10000px;
+    margin: 0;
+  }
+
+  section {
+    margin: 0;
+  }
+/* minmax means it should never go below 500 and at most it should share space
+the other elements equally. auto-fit tells it to put as many items on the row as
+possible. witht these two together, it says that when resizing, it should go up
+it should make a new column in intervals of 500px, because if it were to break
+before that, the card would be less than 500px, which is the min!!! */
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+  #logobox{
+    grid-column: 1/end;
+    text-align: center;
+    margin-bottom: 1em;
+    width: 100%;
+    background: transparent;
+    border: none;
+  }
+  /* i decided to use grid for the overlying layout and flex inside the elements
+  because i figured it would make thinking about the cards a little simpler.*/
+  .content {
+    display: flex;
+    flex-flow: column;
+    padding: 2rem;
+  }
+}
+
+/* STYLING */
+
+.content {
+  background: white;
+  border: inset;
+  color: #353535;
+  border-radius: 1rem;
+  font-family: Avenir, Helvetica, san-serif;
+  font-size: 80%;
+}
+/* you can put multiple font families, and they'll be called in that order.
+you should do this, AGAIN, in case a broswer doesn't support a font.
+in h1, it's saying to use century gothic and IF you don't have that use helvetica
+and IF! you don't have that use arial and so on. */
+h1 {
+  font-family: "century gothic", helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+p {
+  padding: minmax(20px, 30%);
+  text-align: justify;
+}
+
+button {
+  margin-top: auto;
+  background: #FFD166;
+  color: white;
+  font-weight: lighter;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: .5rem;
+  width: 100%;
+  position: bottom;
+}
+button:hover {
+background-color: #F2F2F2;
+color: #6B8F71;
+}
+
+
+
+
+/* NAVBAR????!!! */
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 1rem;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  overflow: auto;
+}
+
+ul.navbar li a {
+  display: block;
+  color: #353535;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: avenir, helvetica, arial, sans-serif;
+}
+
+ul.navbar li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ul.navbar li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+  ul.navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  ul.navbar li a {
+    float: left;
+    padding: 15px;
+  }
+
+  div.content {margin-left: 0;}
+}
+
+@media (max-width: 400px) {
+  ul.navbar li a {
+    text-align: center;
+    float: none;
+  }
+}
