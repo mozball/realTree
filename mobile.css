@@ -56,7 +56,8 @@ before that, the card would be less than 500px, which is the min!!! */
   .boxes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 3rem;
+    justify-items: center;
   }
   #logobox{
     grid-column: 1/end;
@@ -80,6 +81,22 @@ before that, the card would be less than 500px, which is the min!!! */
 .content {
   background: white;
   border: inset;
+  color: #353535;
+  border-radius: 1rem;
+  font-family: Avenir, Helvetica, san-serif;
+  font-size: 80%;
+}
+
+.article {
+display: grid;
+grid-gap: 10px;
+grid-template-columns: minmax(200px, 500px);
+align-content: center;
+justify-content: center;
+margin: 20px;
+}
+
+.article>div {
   color: #353535;
   border-radius: 1rem;
   font-family: Avenir, Helvetica, san-serif;
